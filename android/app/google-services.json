@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "745147333643",
+    "project_id": "flash-chat-81614",
+    "storage_bucket": "flash-chat-81614.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745147333643:android:c140351f2a1f634d8c1b0e",
+        "android_client_info": {
+          "package_name": "com.thechristianmoeller.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745147333643-nabjdr6gkt6066g2hkna67mtf9lgc4mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpBYpporYv1OBY0Dg-AnhzhkLDHztVRMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745147333643-nabjdr6gkt6066g2hkna67mtf9lgc4mu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
