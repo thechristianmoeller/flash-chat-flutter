@@ -30,21 +30,21 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       // upperBound: 1.0,
     );
 
+    //TODO: @Correct this animation so it works properly
     // animation = CurvedAnimation(parent: controller, curve: Curves.easeIn);
-    animation = ColorTween(begin: Colors.blueGrey, end: Colors.white)
-        .animate(controller);
+    animation = ColorTween(begin: Colors.white, end: Colors.white).animate(controller);
 
-    controller.forward();
+    // controller.forward();
     // controller.reverse(from: 1.0);
 
-    // animation.addStatusListener((status) {
-    //   if(status == AnimationStatus.completed) {
-    //     controller.reverse(from: 1.0);
-    //   } else if (status == AnimationStatus.dismissed) {
-    //     controller.forward();
-    //   }
-    //   print(status);
-    // });
+    animation.addStatusListener((status) {
+      if(status == AnimationStatus.completed) {
+        controller.forward(from: 0.0);
+      } else if (status == AnimationStatus.dismissed) {
+        controller.reverse(from: 1.0);
+      }
+      print(status);
+    });
 
     controller.addListener(() {
       setState(() {});
@@ -56,6 +56,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       controller.dispose();
       super.dispose();
     }
+
   }
 
   @override

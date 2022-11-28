@@ -1,3 +1,4 @@
+import 'package:flash_chat/components/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flash_chat/screens/welcome_screen.dart';
 import 'package:flash_chat/screens/login_screen.dart';
@@ -45,8 +46,26 @@ class FlashChat extends StatelessWidget {
         }
 
         // Otherwise, show something whilst waiting for initialization to complete
-        return Text("Loading");
-      },
+
+        print("Critical Error while initializing app");
+        return Directionality(
+          textDirection: TextDirection.ltr,
+          child: Container(
+
+            color: Colors.black,
+            child: TextButton(
+
+              onPressed: () {
+
+              },
+
+              child: Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: new Text('Loading')),
+            ),
+          ),
+        );
+     },
     );
 
 
