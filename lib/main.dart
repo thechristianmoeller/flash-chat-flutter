@@ -47,7 +47,7 @@ class FlashChat extends StatelessWidget {
 
         // Otherwise, show something whilst waiting for initialization to complete
 
-        print("Critical Error while initializing app");
+        print("Critical Initialization while initializing app lolz");
         return Directionality(
           textDirection: TextDirection.ltr,
           child: Container(
